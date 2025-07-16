@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SURYA SREEJA KADA - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f9f9f9;
+      --text: #333;
+      --primary: #4b6cb7;
+      --card: #fff;
+    }
+
+    [data-theme="dark"] {
+      --bg: #121212;
+      --text: #e0e0e0;
+      --primary: #90caf9;
+      --card: #1e1e1e;
+    }
+
+    * {
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-top: 20px;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .toggle-container {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .toggle-container button {
+      background-color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 8px 15px;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--primary);
+    }
+
+    .project-card {
+      background-color: var(--card);
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+      border-radius: 8px;
+    }
+
+    .contact {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .resume-button {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: white;
+      color: var(--primary);
+      font-weight: bold;
+      border: none;
+      border-radius: 25px;
+      text-decoration: none;
+    }
+
+    .resume-button:hover {
+      background-color: #eeeeee;
+    }
+  </style>
+</head>
+<body data-theme="light">
+
+<header>
+  <div class="toggle-container">
+    <button onclick="toggleTheme()">🌙 Toggle Dark Mode</button>
+  </div>
+  <h1>SURYA SREEJA KADA</h1>
+  <p>B.Tech (ECE) | Aspiring Software Developer | Tech Enthusiast</p>
+  <img src="images/profile.jpg.jpg" alt="Surya Sreeja Kada">
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#internships">Internships</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="resume-button" href="resume/SURYA SREEJA KADA_RESUME.pdf" download>📄 Download Resume</a>
+</header>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-card">
+    <h3>AI Desktop Assistant</h3>
+    <p>Voice-based assistant using Python and Tkinter that can open apps, search the web, tell time, and respond to user commands.</p>
+    <p><strong>Tools:</strong> Python, Tkinter, VS Code</p>
+    <p><a href="https://github.com/suryasreeja/Virtual-Assistant" target="_blank">🔗 GitHub Repository</a></p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills & Technologies</h2>
+  <ul>
+    <li><strong>Languages:</strong> Python, C, Java (Basic), SQL, HTML, CSS</li>
+    <li><strong>Frameworks:</strong> Tkinter</li>
+    <li><strong>Tools:</strong> VS Code, Git, GitHub, Power BI, Windows OS</li>
+    <li><strong>Soft Skills:</strong> Communication, Teamwork, Quick Learning, Problem Solving</li>
+  </ul>
+</section>
+
+<section id="internships">
+  <h2>Internship Experience</h2>
+  <ul>
+    <li><strong>AWS Data Engineering Virtual Internship (Apr 2025 - Jun 2025):</strong> EC2, S3, IAM, VPC, Cloud deployments</li>
+    <li><strong>Cisco Virtual Internship (May 2024 - Jul 2024):</strong> Routing, Switching, Subnetting, IP addressing</li>
+  </ul>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <ul>
+    <li><strong>Salesforce AI Associate (Dec 2024):</strong> AI in CRM, machine learning, ethical AI</li>
+  </ul>
+</section>
+
+<section id="coding">
+  <h2>Coding Profiles</h2>
+  <ul>
+    <li><strong>LeetCode:</strong> <a href="https://leetcode.com/u/sree_jaaa_/" target="_blank">leetcode.com/u/sree_jaaa_/</a></li>
+    <li><strong>HackerRank:</strong> <a href="https://www.hackerrank.com/profile/sreeja18138" target="_blank">hackerrank.com/profile/sreeja18138</a></li>
+  </ul>
+</section>
+
+<section class="extra">
+  <h2>Extra-Curriculars</h2>
+  <p>IDE Bootcamp 2025 - Design thinking, startup development, and innovation strategies</p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <p><strong>Email:</strong> <a href="mailto:sreeja18138@gmail.com" style="color: white;">sreeja18138@gmail.com</a></p>
+  <p><strong>Phone:</strong> <a href="tel:+919963218138" style="color: white;">+91 99632 18138</a></p>
+  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/surya-sreeja-kada" style="color: white;">linkedin.com/in/surya-sreeja-kada</a></p>
+  <p><strong>GitHub:</strong> <a href="https://github.com/suryasreeja" style="color: white;">github.com/suryasreeja</a></p>
+</section>
+
+<script>
+  function toggleTheme() {
+    const body = document.body;
+    const current = body.getAttribute('data-theme');
+    body.setAttribute('data-theme', current === 'light' ? 'dark' : 'light');
+  }
+</script>
+
+</body>
+</html>
